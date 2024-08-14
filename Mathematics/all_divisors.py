@@ -4,7 +4,7 @@ def allDivisors(n):
         if(n%i==0):  #with the help of this, i will be able to print one value of my pair.
             print(i)  
             #inorder to print other value of my pair
-            if(n//i!=i):  #doing this because I dont want my both the values to be same..
+            if(n//i!=i):  #doing this because I dont want my both the values to be same..(inorder to avoid perfect sqrs)
                 print(n//i)
 
 if __name__=='__main__':
