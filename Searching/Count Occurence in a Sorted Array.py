@@ -1,6 +1,8 @@
 def countOccurence(arr,x):
     #get its first occurence.
     first = firstIndex(arr,x)
+    if(first==-1):#if first is -1, then it means that number is not present
+        return 0
     last = lastIndex(arr,x)
     count = last-first+1
     return count
@@ -20,7 +22,6 @@ def lastIndex(arr,x):
             end=mid-1
     return last
     
-
 def firstIndex(arr,x):
     start=0
     end=len(arr)-1
